@@ -34,7 +34,8 @@ header.hero p { color: var(--leaf); font-size: 20px; margin: 0 0 28px; }
   display: inline-block; background: #fff; color: var(--green); font-weight: 600;
   padding: 12px 24px; border-radius: 999px; text-decoration: none;
 }
-.shots { display: flex; gap: 16px; justify-content: center; padding: 32px 16px; overflow-x: auto; }
+/* "safe": when the strip overflows, start at its left edge instead of centring it out of reach. */
+.shots { display: flex; gap: 16px; justify-content: safe center; padding: 32px 16px; overflow-x: auto; }
 .shots img { width: 220px; height: auto; border-radius: 18px; flex: none; }
 section { padding: 8px 0 24px; }
 h2 { font-size: 24px; margin: 28px 0 8px; }
